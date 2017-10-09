@@ -24,7 +24,7 @@ export default class CatCard extends Component {
     const myInit = {
       method: 'POST',
     }
-    fetch('http://thecatapi.com/api/images/get?type=jpg', myInit)
+    fetch('http://thecatapi.com/api/images/get?type=png', myInit)
     .then((data) => this.setState({
       url: data.url,
     }))
